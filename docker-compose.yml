@@ -1,0 +1,25 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: creditkit
+      POSTGRES_PASSWORD: creditkit
+      POSTGRES_DB: creditkit
+    ports:
+      - '5432:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    profiles:
+      - postgres
+
+  analytics:
+    build:
+      context: ./analytics
+      dockerfile: Dockerfile
+    ports:
+      - '8000:8000'
+    profiles:
+      - analytics
+
+volumes:
+  pgdata:

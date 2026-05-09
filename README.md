@@ -47,7 +47,7 @@ CreditKit/
 
 ## Environment variables
 
-Create `backend/.env` from `backend/.env.example`:
+Create `backend/.env` from `backend/.env.example` and `frontend/.env` from `frontend/.env.example` (Vite reads `VITE_API_URL`):
 
 | Variable | Description |
 |----------|-------------|

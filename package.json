@@ -1,0 +1,18 @@
+{
+  "name": "creditkit",
+  "private": true,
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c blue,green \"pnpm --filter @creditkit/backend dev\" \"pnpm --filter @creditkit/frontend dev\"",
+    "build": "pnpm --filter @creditkit/types build && pnpm --filter @creditkit/backend build && pnpm --filter @creditkit/frontend build",
+    "lint": "pnpm --filter @creditkit/types lint && pnpm --filter @creditkit/backend lint && pnpm --filter @creditkit/frontend lint",
+    "test": "pnpm --filter @creditkit/backend test && pnpm --filter @creditkit/frontend test && pnpm --filter @creditkit/types test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0",
+    "typescript": "^5.7.2"
+  }
+}

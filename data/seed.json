@@ -1,0 +1,78 @@
+{
+  "opportunities": [
+    {
+      "id": "corp-aurora-mfg",
+      "type": "corporate",
+      "name": "Aurora Manufacturing Inc.",
+      "sector": "Industrials",
+      "industry": "Precision components",
+      "riskRating": "BB",
+      "internalRiskScore": 62,
+      "yieldSpreadBps": 385,
+      "ytmPct": 8.4,
+      "ltvPct": null,
+      "covenantSummary": "Max leverage 5.0x net debt/EBITDA; min interest coverage 2.0x; quarterly reporting.",
+      "watchlist": false,
+      "corporate": {
+        "ebitdaTtm": 42.5,
+        "revenueTtm": 210.0,
+        "totalDebt": 155.0,
+        "cash": 18.2,
+        "interestExpenseTtm": 12.1,
+        "capexTtm": 9.4,
+        "fcfTtm": 14.8,
+        "debtMaturityProfileYears": [1, 3, 5, 5]
+      }
+    },
+    {
+      "id": "infra-solstice-wind",
+      "type": "infrastructure",
+      "name": "Solstice Wind Farm Phase II",
+      "sector": "Renewable Power",
+      "industry": "Onshore wind",
+      "riskRating": "BBB-",
+      "internalRiskScore": 48,
+      "yieldSpreadBps": 220,
+      "ytmPct": 6.1,
+      "ltvPct": 72,
+      "covenantSummary": "Min DSCR 1.20x; liquidity reserve 6 months DS; PPA step-down caps.",
+      "watchlist": false,
+      "infrastructure": {
+        "ppaYearsRemaining": 14,
+        "contractedRevenuePct": 88,
+        "regulatoryRiskScore": 35,
+        "inflationLinkedRevenuePct": 40,
+        "projectLifeYears": 22
+      }
+    },
+    {
+      "id": "corp-harbor-logistics",
+      "type": "corporate",
+      "name": "Harbor Logistics Partners",
+      "sector": "Transportation",
+      "industry": "Intermodal logistics",
+      "riskRating": "B+",
+      "internalRiskScore": 71,
+      "yieldSpreadBps": 520,
+      "ytmPct": 10.2,
+      "ltvPct": null,
+      "covenantSummary": "Springing covenant at 4.5x leverage; blocked distributions if FCF < 0 for two quarters.",
+      "watchlist": true,
+      "corporate": {
+        "ebitdaTtm": 28.0,
+        "revenueTtm": 165.0,
+        "totalDebt": 142.0,
+        "cash": 6.5,
+        "interestExpenseTtm": 14.5,
+        "capexTtm": 7.1,
+        "fcfTtm": 3.2,
+        "debtMaturityProfileYears": [2, 4]
+      }
+    }
+  ],
+  "positions": [
+    { "opportunityId": "corp-aurora-mfg", "weight": 0.35, "notional": 35.0 },
+    { "opportunityId": "infra-solstice-wind", "weight": 0.4, "notional": 40.0 },
+    { "opportunityId": "corp-harbor-logistics", "weight": 0.25, "notional": 25.0 }
+  ]
+}
